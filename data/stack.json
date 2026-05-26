@@ -1,0 +1,69 @@
+[
+  {
+    "id": "frontend",
+    "category": "Frontend",
+    "icon": "monitor",
+    "items": [
+      "TypeScript",
+      "React / Next.js 14",
+      "Tailwind CSS",
+      "JavaScript (ES2022+)",
+      "HTML5 / CSS3",
+      "Zustand"
+    ]
+  },
+  {
+    "id": "backend",
+    "category": "Backend",
+    "icon": "server",
+    "items": [
+      "Python / Flask",
+      "Node.js",
+      "PL/SQL",
+      "Oracle APEX",
+      "REST APIs"
+    ]
+  },
+  {
+    "id": "database",
+    "category": "Banco de Dados",
+    "icon": "database",
+    "items": [
+      "PostgreSQL",
+      "Prisma ORM",
+      "SQLite",
+      "Oracle Database"
+    ]
+  },
+  {
+    "id": "mobile",
+    "category": "Mobile",
+    "icon": "smartphone",
+    "items": [
+      "React Native",
+      "Expo"
+    ]
+  },
+  {
+    "id": "services",
+    "category": "Serviços & Auth",
+    "icon": "globe",
+    "items": [
+      "Clerk",
+      "OpenAI API",
+      "next-intl",
+      "Vercel"
+    ]
+  },
+  {
+    "id": "tools",
+    "category": "Ferramentas",
+    "icon": "code",
+    "items": [
+      "Git / GitHub",
+      "Docker",
+      "VS Code",
+      "Linux / Windows"
+    ]
+  }
+]

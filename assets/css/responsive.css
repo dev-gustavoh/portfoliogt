@@ -1,0 +1,81 @@
+/* ============================================================
+   RESPONSIVE — todas as media queries centralizadas
+   Organizado por breakpoint, do maior para o menor.
+============================================================ */
+
+/* ============================================================
+   BREAKPOINT: 1024px (tablet landscape / notebook menor)
+============================================================ */
+@media (max-width: 1024px) {
+  .hero-stats  { grid-template-columns: repeat(2, 1fr); }
+  .stack-board { grid-template-columns: repeat(2, 1fr); }
+  .gh-repos    { grid-template-columns: repeat(2, 1fr); }
+  .gh-stats    { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ============================================================
+   BREAKPOINT: 768px (tablet portrait / mobile grande)
+============================================================ */
+@media (max-width: 768px) {
+  /* Navbar mobile */
+  .nav-list {
+    display: none;
+    position: fixed;
+    top: 56px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: var(--color-bg-alt);
+    border-bottom: 1px solid var(--color-border);
+  }
+  .nav-list.open  { display: flex; }
+  .nav-list li    { width: 100%; }
+  .nav-list a     { display: block; padding: 0.9rem 2rem; border-bottom: 1px solid var(--color-border); }
+  .nav-burger     { display: flex; }
+
+  /* Hero */
+  #hero           { padding: 7rem 1.5rem 3rem; }
+  .hero-lower     { grid-template-columns: 1fr; gap: 2rem; }
+  .hero-stats     { grid-template-columns: repeat(2, 1fr); width: 100%; }
+
+  /* Seções */
+  .sec            { padding: var(--section-pad-mobile); }
+
+  /* About */
+  .about-grid     { grid-template-columns: 1fr; gap: 2.5rem; }
+
+  /* Projetos */
+  .proj-item      { grid-template-columns: 1fr; gap: 1rem; padding: 1.75rem; }
+  .proj-actions   { flex-direction: row; align-items: center; }
+
+  /* Stack */
+  .stack-board    { grid-template-columns: 1fr; }
+
+  /* Timeline */
+  .tl-columns     { grid-template-columns: 1fr; }
+  .tl-divider     { display: none; }
+  .tl-col.right   { padding-top: 0; }
+
+  /* GitHub */
+  .gh-stats       { grid-template-columns: repeat(2, 1fr); }
+  .gh-repos       { grid-template-columns: 1fr; }
+
+  /* Building Now */
+  .now-grid       { grid-template-columns: 1fr; }
+
+  /* Contato */
+  .contact-grid   { grid-template-columns: 1fr; }
+
+  /* Footer */
+  .footer-inner   { flex-direction: column; gap: 0.4rem; text-align: center; }
+}
+
+/* ============================================================
+   BREAKPOINT: 480px (mobile pequeno)
+============================================================ */
+@media (max-width: 480px) {
+  .hero-h1  { font-size: clamp(2.6rem, 12vw, 4rem); }
+  .ctas     { flex-direction: column; }
+  .stat     { padding: 1rem; }
+}

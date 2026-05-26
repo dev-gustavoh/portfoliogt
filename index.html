@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gustavo Amaral — Desenvolvedor Full Stack. Construindo aplicações, sistemas e produtos digitais com foco em performance e escalabilidade.">
+  <meta name="keywords" content="Gustavo Amaral, desenvolvedor full stack, TypeScript, React, Next.js, Python, Brasília, Oracle APEX">
+  <meta name="author" content="Gustavo Amaral">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gustavo Amaral — Full Stack Developer">
+  <meta property="og:description" content="Construindo aplicações, sistemas e produtos digitais com foco em performance, escalabilidade e experiência do usuário.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+
+  <title>Gustavo Amaral — Full Stack Developer</title>
+
+  <!-- Fontes (preconnect para reduzir latência) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS modularizado (ordem importa: variáveis → base → componentes → animações → responsivo) -->
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Cursor customizado (desktop) -->
+  <div id="js-cursor" aria-hidden="true"></div>
+  <div id="js-cursor-ring" aria-hidden="true"></div>
+
+  <!-- ====================================================
+       NAVIGATION
+  ==================================================== -->
+  <nav id="nav" role="navigation" aria-label="Navegação principal">
+    <a href="#" class="nav-logo" aria-label="Gustavo Amaral — início">
+      G<em>.</em>AMARAL
+    </a>
+
+    <ul class="nav-list" id="nav-list" role="list">
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#projects">Projetos</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a href="#github">GitHub</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+
+    <div class="nav-end">
+      <div class="nav-pill" aria-label="Status: disponível para oportunidades">Disponível</div>
+      <button class="nav-burger" id="nav-burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-list">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====================================================
+       HERO
+  ==================================================== -->
+  <section id="hero" aria-label="Apresentação">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-vignette" aria-hidden="true"></div>
+
+    <div class="hero-content">
+
+      <div class="hero-eyebrow r" aria-hidden="true">
+        Full Stack Developer &nbsp;·&nbsp; Brasília, DF &nbsp;·&nbsp; Senado Federal
+      </div>
+
+      <h1 class="hero-h1 r d1">
+        BUILDING<br>
+        DIGITAL<br>
+        <span class="line-accent">PRODUCTS,</span><br>
+        SYSTEMS &amp;<br>
+        EXPERIENCES.
+      </h1>
+
+      <div class="hero-lower">
+        <div class="r d2">
+          <p class="hero-sub">
+            Desenvolvedor Full Stack com formação em Ciências da Computação. Constrói aplicações web, sistemas e produtos digitais com foco em arquitetura limpa, performance e usabilidade.
+          </p>
+          <div class="ctas">
+            <a href="https://github.com/dev-gustavoh" target="_blank" rel="noopener noreferrer" class="btn btn-fill" aria-label="Perfil no GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.79-.26.79-.58v-2.23c-3.34.72-4.03-1.42-4.03-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.31.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23.96-.27 1.98-.4 3-.4s2.04.13 3 .4c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.19.7.8.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="https://linkedin.com/in/gustavohas/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" aria-label="Perfil no LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0H5a5 5 0 00-5 5v14a5 5 0 005 5h14a5 5 0 005-5V5a5 5 0 00-5-5zM8 19H5V8h3v11zM6.5 6.73A1.77 1.77 0 114.73 5a1.77 1.77 0 011.77 1.73zM20 19h-3v-5.6c0-3.37-4-3.11-4 0V19h-3V8h3v1.77c1.4-2.59 7-2.78 7 2.47V19z"/></svg>
+              LinkedIn
+            </a>
+            <a href="mailto:gustavoh.amaral072@gmail.com" class="btn btn-ghost" aria-label="Enviar e-mail">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+              E-mail
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-stats r d3" aria-label="Estatísticas">
+          <div class="stat">
+            <span class="stat-n" id="s-repos">9</span>
+            <span class="stat-l">Repos</span>
+          </div>
+          <div class="stat">
+            <span class="stat-n">6+</span>
+            <span class="stat-l">Tecnologias</span>
+          </div>
+          <div class="stat">
+            <span class="stat-n">2+</span>
+            <span class="stat-l">Anos Dev</span>
+          </div>
+          <div class="stat">
+            <span class="stat-n">∞</span>
+            <span class="stat-l">Building</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true">Scroll</div>
+  </section>
+
+  <!-- ====================================================
+       ABOUT
+  ==================================================== -->
+  <section id="about" class="sec" aria-labelledby="about-heading">
+    <div class="wrap">
+      <div class="sec-label r">01 — Sobre</div>
+
+      <div class="about-grid">
+        <div class="r">
+          <p class="about-lead">
+            Gustavo Amaral é <strong>Bacharel em Ciências da Computação</strong> e atua como desenvolvedor no <strong>Senado Federal</strong> — onde constrói e mantém sistemas institucionais usando Oracle APEX, PL/SQL e JavaScript em ambiente de alta criticidade.
+          </p>
+
+          <blockquote class="about-quote">
+            <p>Trabalha na interseção entre engenharia de software e produto — do back ao front, de scripts Python a aplicações Next.js com arquitetura modular e moderna.</p>
+          </blockquote>
+
+          <p class="about-lead">
+            Paralelamente ao ambiente corporativo, desenvolve projetos pessoais que exploram <strong>gamificação, mobilidade urbana e sistemas web completos</strong>. Seu projeto mais ambicioso — <strong>LifeQuest</strong> — combina Next.js 14, PostgreSQL, Prisma e integração com OpenAI em uma plataforma SaaS de desenvolvimento pessoal.
+          </p>
+
+          <p class="about-lead">
+            Interesses técnicos atuais: arquitetura de software escalável, integração de LLMs em produto, desenvolvimento mobile com React Native e sistemas de dados relacionais.
+          </p>
+        </div>
+
+        <dl class="about-cards r d1">
+          <div class="about-card">
+            <dt class="about-card__label">Localização</dt>
+            <dd class="about-card__value">Brasília, Distrito Federal</dd>
+          </div>
+          <div class="about-card">
+            <dt class="about-card__label">Formação</dt>
+            <dd class="about-card__value">Bacharel em Ciências da Computação</dd>
+          </div>
+          <div class="about-card">
+            <dt class="about-card__label">Posição atual</dt>
+            <dd class="about-card__value">Desenvolvedor — Senado Federal</dd>
+          </div>
+          <div class="about-card">
+            <dt class="about-card__label">Atuação</dt>
+            <dd class="about-card__value">Full Stack · Web · Mobile</dd>
+          </div>
+          <div class="about-card">
+            <dt class="about-card__label">Foco técnico</dt>
+            <dd class="about-card__value">TypeScript · Python · Oracle APEX</dd>
+          </div>
+          <div class="about-card">
+            <dt class="about-card__label">Contato</dt>
+            <dd class="about-card__value">gustavoh.amaral072@gmail.com</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       PROJECTS
+  ==================================================== -->
+  <section id="projects" class="sec" aria-labelledby="projects-heading">
+    <div class="wrap">
+      <div class="sec-label r">02 — Projetos</div>
+      <h2 id="projects-heading" class="sec-title r">FEATURED<br>WORK</h2>
+
+      <div class="proj-list">
+
+        <!-- 01 · LifeQuest -->
+        <article class="proj-item r" aria-label="Projeto LifeQuest">
+          <span class="proj-item__number" aria-hidden="true">01</span>
+          <div>
+            <h3 class="proj-item__name">
+              LifeQuest
+              <span class="tag tag--type">Web App · SaaS</span>
+              <span class="tag tag--live">Em desenvolvimento</span>
+            </h3>
+            <p class="proj-item__desc">
+              Plataforma de desenvolvimento pessoal gamificada. Transforma gestão de vida, finanças e metas em uma experiência de RPG — com sistema de XP, 10 classes de personagem, quests diárias/épicas, streaks, bucket list e módulo financeiro completo (Kingdom Treasury).
+            </p>
+            <p class="proj-item__problem">
+              <strong>Problema →</strong> Ferramentas de produtividade são abstratas demais para gerar engajamento real e contínuo.
+            </p>
+            <ul class="stack-pills" aria-label="Tecnologias utilizadas">
+              <li class="pill">Next.js 14</li>
+              <li class="pill">TypeScript</li>
+              <li class="pill">PostgreSQL</li>
+              <li class="pill">Prisma ORM</li>
+              <li class="pill">Clerk</li>
+              <li class="pill">Tailwind CSS</li>
+              <li class="pill">Zustand</li>
+              <li class="pill">OpenAI API</li>
+              <li class="pill">next-intl</li>
+            </ul>
+          </div>
+          <div class="proj-item__actions">
+            <a href="https://github.com/dev-gustavoh/lifequest" target="_blank" rel="noopener noreferrer" class="proj-item__link" aria-label="Ver repositório LifeQuest no GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.79-.26.79-.58v-2.23c-3.34.72-4.03-1.42-4.03-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.31.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23.96-.27 1.98-.4 3-.4s2.04.13 3 .4c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.19.7.8.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              Repositório
+            </a>
+          </div>
+        </article>
+
+        <!-- 02 · Qual a Boa DF -->
+        <article class="proj-item r" aria-label="Projeto Qual a Boa DF">
+          <span class="proj-item__number" aria-hidden="true">02</span>
+          <div>
+            <h3 class="proj-item__name">
+              Qual a Boa DF
+              <span class="tag tag--type">Mobile App</span>
+              <span class="tag tag--done">Completo</span>
+            </h3>
+            <p class="proj-item__desc">
+              Aplicativo mobile para descoberta de eventos esportivos, culturais e de lazer em Brasília. Sistema de busca com filtros por categoria, localização e data — com autenticação de usuário, favoritos e integração com backend via REST API.
+            </p>
+            <p class="proj-item__problem">
+              <strong>Problema →</strong> Ausência de uma plataforma centralizada e acessível para eventos locais no Distrito Federal.
+            </p>
+            <ul class="stack-pills" aria-label="Tecnologias utilizadas">
+              <li class="pill">React Native</li>
+              <li class="pill">Expo</li>
+              <li class="pill">JavaScript</li>
+              <li class="pill">Node.js</li>
+              <li class="pill">Spring Boot</li>
+              <li class="pill">REST API</li>
+            </ul>
+          </div>
+          <div class="proj-item__actions">
+            <a href="https://github.com/dev-gustavoh/qual-a-boa-df" target="_blank" rel="noopener noreferrer" class="proj-item__link" aria-label="Ver repositório Qual a Boa DF no GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.79-.26.79-.58v-2.23c-3.34.72-4.03-1.42-4.03-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.31.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23.96-.27 1.98-.4 3-.4s2.04.13 3 .4c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.19.7.8.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              Repositório
+            </a>
+          </div>
+        </article>
+
+        <!-- 03 · Dashboard CRUD -->
+        <article class="proj-item r" aria-label="Projeto Dashboard CRUD">
+          <span class="proj-item__number" aria-hidden="true">03</span>
+          <div>
+            <h3 class="proj-item__name">
+              Dashboard CRUD
+              <span class="tag tag--type">Sistema Administrativo</span>
+              <span class="tag tag--done">Completo</span>
+            </h3>
+            <p class="proj-item__desc">
+              Sistema administrativo full-stack com autenticação por sessão, dashboard com métricas, gerenciamento completo de produtos e usuários. Interface com suporte a tema claro/escuro, sem dependência de frameworks frontend — HTML, CSS e JS puros.
+            </p>
+            <p class="proj-item__problem">
+              <strong>Problema →</strong> Necessidade de um painel administrativo funcional com CRUD real, sem a overhead de frameworks pesados no frontend.
+            </p>
+            <ul class="stack-pills" aria-label="Tecnologias utilizadas">
+              <li class="pill">Python</li>
+              <li class="pill">Flask</li>
+              <li class="pill">SQLite</li>
+              <li class="pill">HTML5</li>
+              <li class="pill">CSS3</li>
+              <li class="pill">JavaScript</li>
+            </ul>
+          </div>
+          <div class="proj-item__actions">
+            <a href="https://github.com/dev-gustavoh/Crud-python-html" target="_blank" rel="noopener noreferrer" class="proj-item__link" aria-label="Ver repositório Dashboard CRUD no GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.79-.26.79-.58v-2.23c-3.34.72-4.03-1.42-4.03-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.31.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23.96-.27 1.98-.4 3-.4s2.04.13 3 .4c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.19.7.8.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              Repositório
+            </a>
+          </div>
+        </article>
+
+        <!-- 04 · AFD Mapa Tesouro -->
+        <article class="proj-item r" aria-label="Projeto AFD Mapa do Tesouro">
+          <span class="proj-item__number" aria-hidden="true">04</span>
+          <div>
+            <h3 class="proj-item__name">
+              AFD — Mapa do Tesouro
+              <span class="tag tag--type">Algoritmos · Acadêmico</span>
+              <span class="tag tag--done">Completo</span>
+            </h3>
+            <p class="proj-item__desc">
+              Jogo interativo de mapa do tesouro implementado sobre Autômatos Finitos Determinísticos com recursão — projeto acadêmico da UDF explorando teoria de computação aplicada. Inclui diagrama de estados em JFLAP e documentação formal.
+            </p>
+            <p class="proj-item__problem">
+              <strong>Problema →</strong> Demonstrar a aplicação prática de AFDs — teoria fundamental de Ciências da Computação — em um contexto interativo e lúdico.
+            </p>
+            <ul class="stack-pills" aria-label="Tecnologias utilizadas">
+              <li class="pill">Python</li>
+              <li class="pill">Autômatos Finitos</li>
+              <li class="pill">Recursão</li>
+              <li class="pill">JFLAP</li>
+              <li class="pill">Teoria da Computação</li>
+            </ul>
+          </div>
+          <div class="proj-item__actions">
+            <a href="https://github.com/dev-gustavoh/afd-mapa-tesouro" target="_blank" rel="noopener noreferrer" class="proj-item__link" aria-label="Ver repositório AFD Mapa do Tesouro no GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.79-.26.79-.58v-2.23c-3.34.72-4.03-1.42-4.03-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.31.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23.96-.27 1.98-.4 3-.4s2.04.13 3 .4c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.19.7.8.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              Repositório
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       TECH STACK
+  ==================================================== -->
+  <section id="stack" class="sec" aria-labelledby="stack-heading">
+    <div class="wrap">
+      <div class="sec-label r">03 — Stack</div>
+      <h2 id="stack-heading" class="sec-title r">TECH<br>STACK</h2>
+
+      <div class="stack-board r">
+
+        <div class="stack-cat">
+          <h3 class="stack-cat__title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            Frontend
+          </h3>
+          <ul class="stack-list" role="list">
+            <li class="stack-item"><span class="stack-item__dot" aria-hidden="true"></span>TypeScript</li>
+            <li class="stack-item"><span class="stack-item__dot" aria-hidden="true"></span>React / Next.js 14</li>
+            <li class="stack-item"><span class="stack-item__dot" aria-hidden="true"></span>Tailwind CSS</li>
+            <li class="stack-item"><span class="stack-item__dot" aria-hidden="true"></span>JavaScript (ES2022+)</li>
+            <li class="stack-item"><span class="stack-item__dot" aria-hidden="true"></span>HTML5 / CSS3</li>
+            <li class="stack-item"><span class="stack-item__dot" aria-hidden="true"></span>Zustand</li>
+          </ul>
+        </div>
+
+        <div class="stack-cat">
+          <h3 class="stack-cat__title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+            Backend
+          </h3>
+          <ul class="stack-list" role="list">
+            <li class="stack-item"><span class="stack-item__dot" aria-hidden="true"></span>Python / Flask</li>
+            <li class="stack-item"><span class="stack-item__dot" aria-hidden="true"></span>Node.js</li>
+            <li class="stack-item"><span class="stack-item__dot" aria-hidden="true"></span>PL/SQL</li>
+            <li class="stack-item"><span class="stack-item__dot" aria-hidden="true"></span>Oracle APEX</li>
+            <li class="stack-item"><span class="stack-item__dot" aria-hidden="true"></span>REST APIs</li>
+          </ul>
+        </div>
+
+        <div class="stack-cat">
+          <h3 class="stack-cat__title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            Banco de Dados
+          </h3>
+          <ul class="stack-list" role="list">
+            <li class="stack-item"><span class="stack-item__dot" aria-hidden="true"></span>PostgreSQL</li>
+            <li class="stack-item"><span class="stack-item__dot" aria-hidden="true"></span>Prisma ORM</li>
+            <li class="stack-item"><span class="stack-item__dot" aria-hidden="true"></span>SQLite</li>
+            <li class="stack-item"><span class="stack-item__dot" aria-hidden="true"></span>Oracle Database</li>
+          </ul>
+        </div>
+
+        <div class="stack-cat">
+          <h3 class="stack-cat__title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            Mobile
+          </h3>
+          <ul class="stack-list" role="list">
+            <li class="stack-item"><span class="stack-item__dot" aria-hidden="true"></span>React Native</li>
+            <li class="stack-item"><span class="stack-item__dot" aria-hidden="true"></span>Expo</li>
+          </ul>
+        </div>
+
+        <div class="stack-cat">
+          <h3 class="stack-cat__title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            Serviços &amp; Auth
+          </h3>
+          <ul class="stack-list" role="list">
+            <li class="stack-item"><span class="stack-item__dot" aria-hidden="true"></span>Clerk</li>
+            <li class="stack-item"><span class="stack-item__dot" aria-hidden="true"></span>OpenAI API</li>
+            <li class="stack-item"><span class="stack-item__dot" aria-hidden="true"></span>next-intl</li>
+            <li class="stack-item"><span class="stack-item__dot" aria-hidden="true"></span>Vercel</li>
+          </ul>
+        </div>
+
+        <div class="stack-cat">
+          <h3 class="stack-cat__title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            Ferramentas
+          </h3>
+          <ul class="stack-list" role="list">
+            <li class="stack-item"><span class="stack-item__dot" aria-hidden="true"></span>Git / GitHub</li>
+            <li class="stack-item"><span class="stack-item__dot" aria-hidden="true"></span>Docker</li>
+            <li class="stack-item"><span class="stack-item__dot" aria-hidden="true"></span>VS Code</li>
+            <li class="stack-item"><span class="stack-item__dot" aria-hidden="true"></span>Linux / Windows</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       TIMELINE
+  ==================================================== -->
+  <section id="timeline" class="sec" aria-labelledby="timeline-heading">
+    <div class="wrap">
+      <div class="sec-label r">04 — Trajetória</div>
+      <h2 id="timeline-heading" class="sec-title r">EVOLUÇÃO<br>TÉCNICA</h2>
+
+      <div class="tl-columns">
+
+        <div class="tl-col">
+
+          <div class="r">
+            <div class="tl-yr" aria-hidden="true">2024</div>
+            <div class="tl-event">
+              <h3 class="tl-event__title">Primeiros projetos open source</h3>
+              <p class="tl-event__sub">AFD Mapa Tesouro — implementação de teoria de computação em Python. Fundamentos de algoritmos, autômatos e programação formal.</p>
+              <p class="tl-event__tag">Python · Algoritmos · Academia</p>
+            </div>
+          </div>
+
+          <div class="r">
+            <div class="tl-yr" aria-hidden="true">2025</div>
+            <div class="tl-event">
+              <h3 class="tl-event__title">Desenvolvimento Full Stack &amp; Mobile</h3>
+              <p class="tl-event__sub">Qual a Boa DF (React Native + Spring Boot) e Dashboard CRUD (Python/Flask). Arquitetura cliente-servidor, autenticação e REST APIs.</p>
+              <p class="tl-event__tag">React Native · Python · Flask · REST</p>
+            </div>
+            <div class="tl-event tl-event--spaced">
+              <h3 class="tl-event__title">Estágio → Desenvolvedor no Senado Federal</h3>
+              <p class="tl-event__sub">Promoção de estagiário (Dez/2023) para desenvolvedor efetivo (Jul/2025). Desenvolvimento do sistema SIMPLS com Oracle APEX, JavaScript e PL/SQL.</p>
+              <p class="tl-event__tag">Oracle APEX · PL/SQL · JavaScript</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="tl-divider" aria-hidden="true"></div>
+
+        <div class="tl-col right">
+
+          <div class="r d1">
+            <div class="tl-yr" aria-hidden="true">2023</div>
+            <div class="tl-event">
+              <h3 class="tl-event__title">Início na graduação e desenvolvimento</h3>
+              <p class="tl-event__sub">Entrada no curso de Ciências da Computação. Primeiros estudos em lógica computacional, programação e fundamentos de redes.</p>
+              <p class="tl-event__tag">JavaScript · HTML · CSS · Fundamentos</p>
+            </div>
+            <div class="tl-event tl-event--spaced">
+              <h3 class="tl-event__title">Estágio — Senado Federal</h3>
+              <p class="tl-event__sub">Início como estagiário de sistemas. Primeiro contato com ambiente corporativo de TI de alta complexidade e missão crítica.</p>
+              <p class="tl-event__tag">Senado Federal · Oracle APEX · Suporte</p>
+            </div>
+          </div>
+
+          <div class="r d1">
+            <div class="tl-yr" aria-hidden="true">2026</div>
+            <div class="tl-event">
+              <h3 class="tl-event__title">LifeQuest — produto completo</h3>
+              <p class="tl-event__sub">Desenvolvimento de plataforma SaaS gamificada com Next.js 14 App Router, PostgreSQL, Prisma, autenticação Clerk e OpenAI. Arquitetura modular, multi-idioma, suporte a Docker e Vercel.</p>
+              <p class="tl-event__tag">Next.js · TypeScript · PostgreSQL · SaaS</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       GITHUB SHOWCASE
+  ==================================================== -->
+  <section id="github" class="sec" aria-labelledby="github-heading">
+    <div class="wrap">
+      <div class="sec-label r">05 — GitHub</div>
+      <h2 id="github-heading" class="sec-title r">ATIVIDADE<br>PÚBLICA</h2>
+
+      <div class="gh-stats r" aria-label="Estatísticas do GitHub">
+        <div class="gh-stat">
+          <span class="gh-stat__number" id="s-pub-repos">9</span>
+          <span class="gh-stat__label">Repositórios</span>
+        </div>
+        <div class="gh-stat">
+          <span class="gh-stat__number" id="s-total-stars">2</span>
+          <span class="gh-stat__label">Stars recebidas</span>
+        </div>
+        <div class="gh-stat">
+          <span class="gh-stat__number" id="s-followers">2</span>
+          <span class="gh-stat__label">Seguidores</span>
+        </div>
+        <div class="gh-stat">
+          <span class="gh-stat__number">2023</span>
+          <span class="gh-stat__label">No GitHub desde</span>
+        </div>
+      </div>
+
+      <!-- Conteúdo estático como fallback — GitHub API atualiza via JS -->
+      <div class="gh-repos r" id="gh-repos-grid" aria-label="Repositórios públicos">
+
+        <a href="https://github.com/dev-gustavoh/lifequest" target="_blank" rel="noopener noreferrer" class="repo-card">
+          <div class="repo-card__name">lifequest</div>
+          <div class="repo-card__desc">Plataforma SaaS de gamificação de vida com sistema RPG, quests, finanças e progressão de personagem.</div>
+          <div class="repo-card__footer">
+            <div class="repo-card__lang"><span class="lang-dot" style="background:#3178c6" aria-hidden="true"></span>TypeScript</div>
+            <div class="repo-card__stars" aria-label="1 star"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>1</div>
+          </div>
+        </a>
+
+        <a href="https://github.com/dev-gustavoh/qual-a-boa-df" target="_blank" rel="noopener noreferrer" class="repo-card">
+          <div class="repo-card__name">qual-a-boa-df</div>
+          <div class="repo-card__desc">App mobile para descoberta de eventos em Brasília. React Native + Expo com backend Spring Boot.</div>
+          <div class="repo-card__footer">
+            <div class="repo-card__lang"><span class="lang-dot" style="background:#f1e05a" aria-hidden="true"></span>JavaScript</div>
+            <div class="repo-card__stars" aria-label="0 stars"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>0</div>
+          </div>
+        </a>
+
+        <a href="https://github.com/dev-gustavoh/Crud-python-html" target="_blank" rel="noopener noreferrer" class="repo-card">
+          <div class="repo-card__name">Crud-python-html</div>
+          <div class="repo-card__desc">Sistema administrativo full-stack: autenticação, dashboard, CRUD de produtos/usuários com Flask e SQLite.</div>
+          <div class="repo-card__footer">
+            <div class="repo-card__lang"><span class="lang-dot" style="background:#563d7c" aria-hidden="true"></span>CSS</div>
+            <div class="repo-card__stars" aria-label="0 stars"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>0</div>
+          </div>
+        </a>
+
+        <a href="https://github.com/dev-gustavoh/afd-mapa-tesouro" target="_blank" rel="noopener noreferrer" class="repo-card">
+          <div class="repo-card__name">afd-mapa-tesouro</div>
+          <div class="repo-card__desc">Jogo do mapa do tesouro baseado em Autômatos Finitos Determinísticos com recursão — projeto acadêmico.</div>
+          <div class="repo-card__footer">
+            <div class="repo-card__lang"><span class="lang-dot" style="background:#3572A5" aria-hidden="true"></span>Python</div>
+            <div class="repo-card__stars" aria-label="1 star"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>1</div>
+          </div>
+        </a>
+
+        <a href="https://github.com/dev-gustavoh/timer-shutdown" target="_blank" rel="noopener noreferrer" class="repo-card">
+          <div class="repo-card__name">timer-shutdown</div>
+          <div class="repo-card__desc">Ferramenta para agendamento e controle de desligamento automático do sistema operacional.</div>
+          <div class="repo-card__footer">
+            <div class="repo-card__lang"><span class="lang-dot" style="background:#3D6117" aria-hidden="true"></span>TeX</div>
+            <div class="repo-card__stars" aria-label="0 stars"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>0</div>
+          </div>
+        </a>
+
+        <div class="repo-more">
+          <div class="repo-more__label">Ver todos os projetos</div>
+          <a href="https://github.com/dev-gustavoh" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" aria-label="Ver todos os repositórios no GitHub">
+            github.com/dev-gustavoh
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       BUILDING NOW
+  ==================================================== -->
+  <section id="now" class="sec" aria-labelledby="now-heading">
+    <div class="wrap">
+      <div class="sec-label r">06 — Agora</div>
+      <h2 id="now-heading" class="sec-title r">BUILDING<br>NOW</h2>
+
+      <div class="now-grid">
+
+        <div class="now-feature r">
+          <div class="now-feature__live-label">Projeto principal ativo</div>
+          <h3 class="now-feature__name">LifeQuest</h3>
+          <p class="now-feature__desc">
+            Plataforma SaaS de desenvolvimento pessoal gamificada em construção ativa. Módulos em desenvolvimento: sistema financeiro (Kingdom Treasury), achievement engine, integração OpenAI e deploy em produção via Vercel e Docker.
+          </p>
+          <ul class="stack-pills" aria-label="Tecnologias">
+            <li class="pill">Next.js 14 App Router</li>
+            <li class="pill">TypeScript</li>
+            <li class="pill">PostgreSQL</li>
+            <li class="pill">Prisma ORM</li>
+            <li class="pill">Clerk Auth</li>
+            <li class="pill">OpenAI API</li>
+          </ul>
+        </div>
+
+        <div class="now-sidebar r d1">
+          <div class="now-item">
+            <div class="now-item__label">Explorando</div>
+            <p class="now-item__value">App Router do Next.js 14, arquitetura de sistemas escaláveis e integração de LLMs em produtos de software.</p>
+          </div>
+          <div class="now-item">
+            <div class="now-item__label">No trabalho</div>
+            <p class="now-item__value">Desenvolvimento e manutenção de sistemas institucionais no Senado Federal — Oracle APEX, PL/SQL e JavaScript.</p>
+          </div>
+          <div class="now-item">
+            <div class="now-item__label">Próximos passos</div>
+            <p class="now-item__value">Deployment do LifeQuest. Configurar pipelines CI/CD e explorar Docker em produção para projetos pessoais.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       CONTACT
+  ==================================================== -->
+  <section id="contact" class="sec" aria-labelledby="contact-heading">
+    <div class="wrap">
+      <div class="sec-label r">07 — Contato</div>
+
+      <div class="contact-grid">
+        <div class="r">
+          <h2 id="contact-heading" class="contact-grid__heading">DISPONÍVEL<br>PARA<br>OPORTUNIDADES.</h2>
+          <p class="contact-grid__sub">
+            Aberto a oportunidades, colaborações e projetos com desafios reais de engenharia. Projetos que envolvam produto, escalabilidade e impacto têm preferência.
+          </p>
+        </div>
+
+        <nav class="contact-links r d1" aria-label="Links de contato">
+          <a href="https://github.com/dev-gustavoh" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.79-.26.79-.58v-2.23c-3.34.72-4.03-1.42-4.03-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.31.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23.96-.27 1.98-.4 3-.4s2.04.13 3 .4c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.19.7.8.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            github.com/dev-gustavoh
+          </a>
+          <a href="https://linkedin.com/in/gustavohas/" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0H5a5 5 0 00-5 5v14a5 5 0 005 5h14a5 5 0 005-5V5a5 5 0 00-5-5zM8 19H5V8h3v11zM6.5 6.73A1.77 1.77 0 114.73 5a1.77 1.77 0 011.77 1.73zM20 19h-3v-5.6c0-3.37-4-3.11-4 0V19h-3V8h3v1.77c1.4-2.59 7-2.78 7 2.47V19z"/></svg>
+            linkedin.com/in/gustavohas
+          </a>
+          <a href="mailto:gustavoh.amaral072@gmail.com" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+            gustavoh.amaral072@gmail.com
+          </a>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       FOOTER
+  ==================================================== -->
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <span class="footer-inner__copy">© 2026 Gustavo Amaral</span>
+      <span class="footer-inner__location">Brasília, DF &nbsp;·&nbsp; <em>Disponível para novas oportunidades</em></span>
+    </div>
+  </footer>
+
+  <!-- JS como ES Module — requer servidor HTTP (não funciona via file://) -->
+  <script type="module" src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+/* ============================================================
+   ANIMATIONS — keyframes, scroll reveal e efeitos de transição
+============================================================ */
+
+/* --- Piscar do indicador de status --- */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.25; }
+}
+
+/* --- Linha de scroll na seção hero --- */
+@keyframes scrollGrow {
+  0%   { transform: scaleY(0); transform-origin: top; }
+  45%  { transform: scaleY(1); transform-origin: top; }
+  50%  { transform: scaleY(1); transform-origin: bottom; }
+  100% { transform: scaleY(0); transform-origin: bottom; }
+}
+
+/* ============================================================
+   SCROLL REVEAL
+   Elementos com .r ficam opacos e deslocados até .vis ser adicionado
+============================================================ */
+.r {
+  opacity: 0;
+  transform: translateY(var(--reveal-distance));
+  transition:
+    opacity  var(--duration-slow) var(--ease-default),
+    transform var(--duration-slow) var(--ease-default);
+}
+
+.r.vis {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Delays escalonados para revelar em sequência */
+.r.d1 { transition-delay: 0.1s; }
+.r.d2 { transition-delay: 0.2s; }
+.r.d3 { transition-delay: 0.3s; }

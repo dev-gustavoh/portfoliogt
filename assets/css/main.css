@@ -1,0 +1,109 @@
+/* ============================================================
+   MAIN — reset, base, tipografia e utilitários globais
+============================================================ */
+
+/* --- Reset universal --- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- Base HTML --- */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* --- Base body --- */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- Scrollbar personalizado --- */
+::-webkit-scrollbar       { width: 3px; }
+::-webkit-scrollbar-track { background: var(--color-bg); }
+::-webkit-scrollbar-thumb { background: var(--color-accent); }
+
+/* --- Seleção de texto --- */
+::selection {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+/* --- Links sem estilo padrão --- */
+a { color: inherit; }
+
+/* --- Focus visible global (acessibilidade) --- */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+/* ============================================================
+   LAYOUT UTILITÁRIOS
+============================================================ */
+
+/* Container centralizado com padding lateral */
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Seção com padding padrão */
+.sec {
+  padding: var(--section-pad);
+}
+
+/* Rótulo de seção (número + linha decorativa) */
+.sec-label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--color-accent);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.sec-label::after {
+  content: '';
+  width: 2.5rem;
+  height: 1px;
+  background: var(--color-accent);
+}
+
+/* Título de seção em uppercase */
+.sec-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-weight: 800;
+  line-height: 1.0;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+  color: var(--color-text);
+  margin-bottom: 3.5rem;
+}
+
+/* Flex wrapper para itens alinhados do lado direito da navbar */
+.nav-end {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Espaçamento entre eventos na timeline */
+.tl-event--spaced {
+  margin-top: 1rem;
+}

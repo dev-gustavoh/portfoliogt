@@ -1,0 +1,50 @@
+/* ============================================================
+   DESIGN TOKENS — fonte única de verdade para todas as variáveis
+   Alterar aqui propaga automaticamente para toda a aplicação.
+============================================================ */
+
+:root {
+  /* --- Cores de fundo --- */
+  --color-bg:          #1A1A1A;
+  --color-bg-alt:      #111111;
+  --color-bg-card:     #161616;
+
+  /* --- Cores de texto --- */
+  --color-text:        #DDE4DE;
+  --color-text-muted:  #6C9E89;
+
+  /* --- Accent / brand --- */
+  --color-accent:      #04E181;
+  --color-accent-dark: #048C54;
+
+  /* --- Bordas --- */
+  --color-border:        rgba(221, 228, 222, 0.08);
+  --color-border-accent: rgba(4, 225, 129, 0.25);
+
+  /* --- Tipografia --- */
+  --font-display: 'Syne', sans-serif;
+  --font-body:    'Inter', sans-serif;
+  --font-mono:    'JetBrains Mono', monospace;
+
+  /* --- Layout --- */
+  --max-width:    1280px;
+  --section-pad:  6rem 2rem;
+  --section-pad-mobile: 4rem 1.5rem;
+
+  /* --- Transitions --- */
+  --duration-fast:   0.2s;
+  --duration-base:   0.3s;
+  --duration-slow:   0.65s;
+  --ease-default:    ease;
+  --transition:      var(--duration-fast) var(--ease-default);
+
+  /* --- Animações --- */
+  --reveal-distance: 24px;
+
+  /* --- Z-index scale --- */
+  --z-cursor:   9999;
+  --z-cursor-ring: 9998;
+  --z-navbar:   200;
+  --z-overlay:  100;
+  --z-base:     1;
+}

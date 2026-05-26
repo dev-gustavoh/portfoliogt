@@ -1,0 +1,56 @@
+[
+  {
+    "year": "2023",
+    "column": "right",
+    "events": [
+      {
+        "title": "Início na graduação e desenvolvimento",
+        "description": "Entrada no curso de Ciências da Computação. Primeiros estudos em lógica computacional, programação e fundamentos de redes.",
+        "tags": "JavaScript · HTML · CSS · Fundamentos"
+      },
+      {
+        "title": "Estágio — Senado Federal",
+        "description": "Início como estagiário de sistemas. Primeiro contato com ambiente corporativo de TI de alta complexidade e missão crítica.",
+        "tags": "Senado Federal · Oracle APEX · Suporte"
+      }
+    ]
+  },
+  {
+    "year": "2024",
+    "column": "left",
+    "events": [
+      {
+        "title": "Primeiros projetos open source",
+        "description": "AFD Mapa Tesouro — implementação de teoria de computação em Python. Fundamentos de algoritmos, autômatos e programação formal.",
+        "tags": "Python · Algoritmos · Academia"
+      }
+    ]
+  },
+  {
+    "year": "2025",
+    "column": "left",
+    "events": [
+      {
+        "title": "Desenvolvimento Full Stack & Mobile",
+        "description": "Qual a Boa DF (React Native + Spring Boot) e Dashboard CRUD (Python/Flask). Arquitetura cliente-servidor, autenticação e REST APIs.",
+        "tags": "React Native · Python · Flask · REST"
+      },
+      {
+        "title": "Estágio → Desenvolvedor no Senado Federal",
+        "description": "Promoção de estagiário (Dez/2023) para desenvolvedor efetivo (Jul/2025). Desenvolvimento do sistema SIMPLS com Oracle APEX, JavaScript e PL/SQL.",
+        "tags": "Oracle APEX · PL/SQL · JavaScript"
+      }
+    ]
+  },
+  {
+    "year": "2026",
+    "column": "right",
+    "events": [
+      {
+        "title": "LifeQuest — produto completo",
+        "description": "Desenvolvimento de plataforma SaaS gamificada com Next.js 14 App Router, PostgreSQL, Prisma, autenticação Clerk e OpenAI. Arquitetura modular, multi-idioma, suporte a Docker e Vercel.",
+        "tags": "Next.js · TypeScript · PostgreSQL · SaaS"
+      }
+    ]
+  }
+]

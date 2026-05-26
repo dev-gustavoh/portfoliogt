@@ -1,0 +1,84 @@
+[
+  {
+    "id": "lifequest",
+    "number": "01",
+    "name": "LifeQuest",
+    "type": "Web App · SaaS",
+    "status": "live",
+    "statusLabel": "Em desenvolvimento",
+    "description": "Plataforma de desenvolvimento pessoal gamificada. Transforma gestão de vida, finanças e metas em uma experiência de RPG — com sistema de XP, 10 classes de personagem, quests diárias/épicas, streaks, bucket list e módulo financeiro completo (Kingdom Treasury).",
+    "problem": "Ferramentas de produtividade são abstratas demais para gerar engajamento real e contínuo.",
+    "stack": [
+      "Next.js 14",
+      "TypeScript",
+      "PostgreSQL",
+      "Prisma ORM",
+      "Clerk",
+      "Tailwind CSS",
+      "Zustand",
+      "OpenAI API",
+      "next-intl"
+    ],
+    "github": "https://github.com/dev-gustavoh/lifequest",
+    "live": null
+  },
+  {
+    "id": "qual-a-boa-df",
+    "number": "02",
+    "name": "Qual a Boa DF",
+    "type": "Mobile App",
+    "status": "done",
+    "statusLabel": "Completo",
+    "description": "Aplicativo mobile para descoberta de eventos esportivos, culturais e de lazer em Brasília. Sistema de busca com filtros por categoria, localização e data — com autenticação de usuário, favoritos e integração com backend via REST API.",
+    "problem": "Ausência de uma plataforma centralizada e acessível para eventos locais no Distrito Federal.",
+    "stack": [
+      "React Native",
+      "Expo",
+      "JavaScript",
+      "Node.js",
+      "Spring Boot",
+      "REST API"
+    ],
+    "github": "https://github.com/dev-gustavoh/qual-a-boa-df",
+    "live": null
+  },
+  {
+    "id": "crud-python-html",
+    "number": "03",
+    "name": "Dashboard CRUD",
+    "type": "Sistema Administrativo",
+    "status": "done",
+    "statusLabel": "Completo",
+    "description": "Sistema administrativo full-stack com autenticação por sessão, dashboard com métricas, gerenciamento completo de produtos e usuários. Interface com suporte a tema claro/escuro, sem dependência de frameworks frontend — HTML, CSS e JS puros.",
+    "problem": "Necessidade de um painel administrativo funcional com CRUD real, sem a overhead de frameworks pesados no frontend.",
+    "stack": [
+      "Python",
+      "Flask",
+      "SQLite",
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ],
+    "github": "https://github.com/dev-gustavoh/Crud-python-html",
+    "live": null
+  },
+  {
+    "id": "afd-mapa-tesouro",
+    "number": "04",
+    "name": "AFD — Mapa do Tesouro",
+    "type": "Algoritmos · Acadêmico",
+    "status": "done",
+    "statusLabel": "Completo",
+    "description": "Jogo interativo de mapa do tesouro implementado sobre Autômatos Finitos Determinísticos com recursão — projeto acadêmico da UDF explorando teoria de computação aplicada. Inclui diagrama de estados em JFLAP e documentação formal.",
+    "problem": "Demonstrar a aplicação prática de AFDs — teoria fundamental de Ciências da Computação — em um contexto interativo e lúdico.",
+    "stack": [
+      "Python",
+      "Autômatos Finitos",
+      "Recursão",
+      "JFLAP",
+      "Teoria da Computação"
+    ],
+    "github": "https://github.com/dev-gustavoh/afd-mapa-tesouro",
+    "live": null
+  }
+]
