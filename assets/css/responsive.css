@@ -17,7 +17,8 @@
    BREAKPOINT: 768px (tablet portrait / mobile grande)
 ============================================================ */
 @media (max-width: 768px) {
-  /* Navbar mobile */
+
+  /* --- Navbar mobile --- */
   .nav-list {
     display: none;
     position: fixed;
@@ -29,53 +30,138 @@
     background: var(--color-bg-alt);
     border-bottom: 1px solid var(--color-border);
   }
-  .nav-list.open  { display: flex; }
-  .nav-list li    { width: 100%; }
-  .nav-list a     { display: block; padding: 0.9rem 2rem; border-bottom: 1px solid var(--color-border); }
-  .nav-burger     { display: flex; }
+  .nav-list.open { display: flex; }
+  .nav-list li   { width: 100%; }
+  .nav-list a    { display: block; padding: 0.9rem 2rem; border-bottom: 1px solid var(--color-border); }
+  .nav-burger    { display: flex; }
 
-  /* Hero */
-  #hero           { padding: 7rem 1.5rem 3rem; }
-  .hero-lower     { grid-template-columns: 1fr; gap: 2rem; }
-  .hero-stats     { grid-template-columns: repeat(2, 1fr); width: 100%; }
+  /* --- Hero --- */
+  #hero { padding: 7rem 1.5rem 3rem; }
 
-  /* Seções */
-  .sec            { padding: var(--section-pad-mobile); }
+  .hero-h1 {
+    font-size: clamp(2rem, 10vw, 3.2rem);
+    letter-spacing: -0.03em;
+    line-height: 1.0;
+  }
 
-  /* About */
-  .about-grid     { grid-template-columns: 1fr; gap: 2.5rem; }
+  .hero-lower {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 
-  /* Projetos */
-  .proj-item      { grid-template-columns: 1fr; gap: 1rem; padding: 1.75rem; }
-  .proj-actions   { flex-direction: row; align-items: center; }
+  .hero-sub {
+    font-size: 0.9rem;
+    max-width: 100%;
+  }
 
-  /* Stack */
-  .stack-board    { grid-template-columns: 1fr; }
+  /* Botões em coluna no mobile — sobrescreve white-space: nowrap de components.css */
+  .ctas {
+    flex-direction: column;
+  }
+  .btn {
+    white-space: normal;
+  }
 
-  /* Timeline */
-  .tl-columns     { grid-template-columns: 1fr; }
-  .tl-divider     { display: none; }
-  .tl-col.right   { padding-top: 0; }
+  .hero-stats { grid-template-columns: repeat(2, 1fr); width: 100%; }
 
-  /* GitHub */
-  .gh-stats       { grid-template-columns: repeat(2, 1fr); }
-  .gh-repos       { grid-template-columns: 1fr; }
+  /* --- Seções --- */
+  .sec { padding: var(--section-pad-mobile); }
 
-  /* Building Now */
-  .now-grid       { grid-template-columns: 1fr; }
+  /* --- About --- */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 
-  /* Contato */
-  .contact-grid   { grid-template-columns: 1fr; }
+  .about-lead {
+    font-size: 0.9rem;
+  }
 
-  /* Footer */
-  .footer-inner   { flex-direction: column; gap: 0.4rem; text-align: center; }
+  .about-quote p {
+    font-size: 1rem;
+  }
+
+  /* <dl> não transborda a tela */
+  .about-cards {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  /* Empilha label + valor verticalmente */
+  .about-card {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+    padding: 1rem;
+  }
+
+  /* Sobrescreve min-width: 100px de components.css */
+  .about-card__label {
+    min-width: unset;
+    font-size: 0.6rem;
+  }
+
+  .about-card__value {
+    font-size: 0.85rem;
+    word-break: break-word;
+  }
+
+  /* --- Projetos --- */
+  .proj-item    { grid-template-columns: 1fr; gap: 1rem; padding: 1.75rem; }
+  .proj-item__actions { flex-direction: row; align-items: center; }
+
+  /* --- Stack --- */
+  .stack-board { grid-template-columns: 1fr; }
+
+  /* --- Timeline --- */
+  .tl-columns   { grid-template-columns: 1fr; }
+  .tl-divider   { display: none; }
+  .tl-col.right { padding-top: 0; }
+
+  /* --- GitHub --- */
+  .gh-stats { grid-template-columns: repeat(2, 1fr); }
+  .gh-repos { grid-template-columns: 1fr; }
+
+  /* --- Building Now --- */
+  .now-grid { grid-template-columns: 1fr; }
+
+  /* --- Contato --- */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .contact-grid__heading {
+    font-size: clamp(1.8rem, 8vw, 3rem);
+    line-height: 1.0;
+  }
+
+  .contact-grid__sub {
+    font-size: 0.875rem;
+    max-width: 100%;
+  }
+
+  .contact-links {
+    width: 100%;
+  }
+
+  /* Sobrescreve min-width: 240px de components.css */
+  .contact-link {
+    min-width: unset;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 0.65rem;
+    padding: 0.65rem 1rem;
+  }
+
+  /* --- Footer --- */
+  .footer-inner { flex-direction: column; gap: 0.4rem; text-align: center; }
 }
 
 /* ============================================================
-   BREAKPOINT: 480px (mobile pequeno)
+   BREAKPOINT: 480px (mobile pequeno — ex: iPhone SE 375px)
 ============================================================ */
 @media (max-width: 480px) {
-  .hero-h1  { font-size: clamp(2.6rem, 12vw, 4rem); }
-  .ctas     { flex-direction: column; }
-  .stat     { padding: 1rem; }
+  .hero-h1 { font-size: clamp(1.8rem, 9vw, 2.8rem); }
+  .stat    { padding: 1rem; }
 }
